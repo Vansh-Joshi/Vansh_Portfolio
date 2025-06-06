@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const mediaItems = [
-  {type:'image', src: '/assets/beyondgallery/mf23.JPEG', caption: 'Music Fest 2023' },
-  {type:'image', src: '/assets/beyondgallery/jamming.jpeg', caption: 'Random Jamming' },
   {type:'image', src: '/assets/beyondgallery/ngo.jpeg', caption: 'Anoopam Mission NGO work' },
+  {type:'image', src: '/assets/beyondgallery/jamming.jpeg', caption: 'Random Jamming' },
+  {type:'image', src: '/assets/beyondgallery/mf23.JPEG', caption: 'Music Fest 2023' },
   // {type:'image', src: '/assets/beyondgallery/mf23.JPEG', caption: 'Alumni Meetup Session' },
   {type:'image', src: '/assets/beyondgallery/travel.jpeg', caption: 'Travel' },
   {type:'video', src: '/assets/beyondgallery/live_perform.mp4', caption: 'Live Performance' },
