@@ -45,7 +45,7 @@ export default function BeyondGallery() {
           playsInline
           className="w-full rounded-xl shadow-md"
           preload="metadata"
-          poster="your-thumbnail.jpg" // optional custom thumbnail
+          poster="/assets/beyondgallery/live_perf_thumbnail.jpg" // optional custom thumbnail
         />
         </div>
       )}
