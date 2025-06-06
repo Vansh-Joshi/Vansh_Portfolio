@@ -62,7 +62,11 @@ export default function BeyondWork() {
       >
         Beyond Work
       </motion.h2>
-      {/* <BeyondGallery /> */}
+
+
+        <div className="max-w-5xl mx-auto">
+      <BeyondGallery />
+      </div>
       <div className="max-w-5xl mx-auto space-y-16">
         {beyondWork.map((section, idx) => (
           <motion.div

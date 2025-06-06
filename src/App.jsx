@@ -26,8 +26,8 @@ function HomePage(){
     <CodingProfile />
     
   </main>
-  <SocialLinks />
-  <Footer />
+  
+  
   </>
   );
 }
@@ -42,6 +42,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/beyond-work" element={<BeyondWork />} />
         </Routes>
+        <SocialLinks />
+        <Footer />
       </div>
     </Router>
   );

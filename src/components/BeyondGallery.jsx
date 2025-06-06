@@ -3,12 +3,14 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [
-  { src: 'src/assets/vansh_profile.jpeg', caption: 'Music Fest 2023' },
-  { src: 'src/assets/vansh_profile.jpeg', caption: 'Club Performance' },
-  { src: 'src/assets/vansh_profile.jpeg', caption: 'Volunteer Event' },
-  { src: 'src/assets/vansh_profile.jpeg', caption: 'Photography Trip' },
-  { src: 'src/assets/vansh_profile.jpeg', caption: 'Workshop Session' },
+const mediaItems = [
+  {type:'image', src: 'src/assets/beyondgallery/mf23.jpeg', caption: 'Music Fest 2023' },
+  {type:'image', src: 'src/assets/beyondgallery/jamming.jpeg', caption: 'Random Jamming' },
+  {type:'image', src: 'src/assets/beyondgallery/ngo.jpeg', caption: 'Anoopam Mission NGO work' },
+  {type:'image', src: 'src/assets/beyondgallery/mf23.jpeg', caption: 'Alumni Meetup Session' },
+  {type:'image', src: 'src/assets/beyondgallery/travel.jpeg', caption: 'Travel' },
+  {type:'video', src: 'src/assets/beyondgallery/live_perform.mp4', caption: 'Live Performance' },
+  {type:'image', src: 'src/assets/beyondgallery/travel-3.jpg', caption: 'Go to place' }
 ];
 
 export default function BeyondGallery() {
@@ -23,20 +25,30 @@ export default function BeyondGallery() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4">
-      <Slider {...settings}>
-        {images.map(({ src, caption }, idx) => (
-          <div key={idx} className="px-2">
-            <img
-              src={src}
-              alt={caption}
-              className="w-full rounded-xl shadow-md"
-              style={{ cursor: 'pointer' }}
-            />
-            <p className="mt-2 text-center text-gray-700 font-medium">{caption}</p>
-          </div>
-        ))}
-      </Slider>
+    <div className="max-w-4xl mx-auto"> 
+<Slider {...settings}>
+  
+  {mediaItems.map(({ type, src, caption }, idx) => (
+    <div key={idx} className="px-2 mt-10 mb-10">
+      {type === 'image' ? (
+        <img
+          src={src}
+          alt={caption}
+          className="w-full rounded-xl shadow-md"
+        />
+      ) : (
+        <div className="aspect-video w-full rounded-xl overflow-hidden shadow-md">
+        <video
+          src={src}
+          controls
+          className="w-full rounded-xl shadow-md"
+        />
+        </div>
+      )}
+      <p className="mt-2 text-center text-gray-700 font-medium">{caption}</p>
+    </div>
+  ))}
+</Slider>
     </div>
   );
 }
