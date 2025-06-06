@@ -20,8 +20,11 @@ export default function BeyondGallery() {
     slidesToShow: 3,
     arrows: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
   };
 
   return (
