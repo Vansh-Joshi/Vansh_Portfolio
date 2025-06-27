@@ -46,7 +46,7 @@ export default function About() {
               My greatest ambition is to create a positive impact & add value to the society with my utmost ability.
             </p>
             <a
-              href="https://drive.google.com/file/d/1L7WTww5_BbECHWXNHVxAc2l8zIlJBzH0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1AkTN3eHRvkK_KzOmaR7M8iDiZ_NzzZHj/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors"
