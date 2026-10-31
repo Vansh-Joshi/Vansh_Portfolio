@@ -1,21 +1,18 @@
-// sections/CodingProfile.jsx
 import React from 'react';
-import { FaCode, FaCodeBranch } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef, SiGeeksforgeeks } from 'react-icons/si';
-import { MdOutlineScoreboard } from 'react-icons/md';
 import ibLogo from '../assets/ib-logo-square.png';
 
 export default function CodingProfile() {
   return (
-    <section className="px-6 py-10 bg-white text-gray-800" id="coding">
-      <h2 className="text-3xl font-semibold mb-6 text-center">Coding Practice</h2>
+    <section className="px-6 py-12 bg-white text-gray-800" id="coding" aria-labelledby="coding-heading">
+      <h2 id="coding-heading" className="text-3xl font-semibold mb-6 text-center">Coding Practice</h2>
 
       <p className="text-center mb-8 text-gray-600">
         While I don’t do competitive coding regularly, I keep my DSA skills sharp with problem-solving on various platforms.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-lg">
         <div className="flex items-center gap-4">
-          <SiLeetcode className="text-yellow-500 text-3xl" />
+          <SiLeetcode aria-hidden="true" className="text-yellow-500 text-3xl shrink-0" />
           <span>
             <strong>LeetCode:</strong> 1770 rating —{' '}
             <a
@@ -29,7 +26,7 @@ export default function CodingProfile() {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <SiCodechef className="text-orange-500 text-3xl" />
+          <SiCodechef aria-hidden="true" className="text-orange-500 text-3xl shrink-0" />
           <span>
             <strong>CodeChef:</strong> 1673 rating —{' '}
             <a
@@ -43,7 +40,7 @@ export default function CodingProfile() {
           </span>
         </div>
         <div className="flex items-center gap-4">
-        <img src={ibLogo} alt="InterviewBit" className="w-9 h-9 rounded object-contain align-left" />
+        <img src={ibLogo} alt="" loading="lazy" className="w-9 h-9 rounded object-contain shrink-0" />
         <span>
             <strong>InterviewBit:</strong> Score 34,816 —{' '}
             <a
@@ -57,7 +54,7 @@ export default function CodingProfile() {
         </span>
         </div>
         <div className="flex items-center gap-4">
-          <SiGeeksforgeeks className="text-green-600 text-3xl" />
+          <SiGeeksforgeeks aria-hidden="true" className="text-green-600 text-3xl shrink-0" />
           <span>
             <strong>GFG:</strong> 4⭐ rating —{' '}
             <a
